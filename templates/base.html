@@ -1,0 +1,18 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <title>Blog Sayt</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+
+<body>
+    <header>
+        <a href="{% url 'blog_list_view' %}">Blog</a>
+    </header>
+    {% block content %}
+
+    {% endblock content %}
+</body>
+
+</html>
